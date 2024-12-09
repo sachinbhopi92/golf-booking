@@ -11,7 +11,7 @@
 # Implementation -
 
 Tech-stack used :
-HTML, SCSS, JavaScript, Bootstrap framework(for UI classes), React js framework, redux toolkit, Vite, yarn, etc....
+HTML, SCSS, JavaScript, Bootstrap framework(for UI classes), React js framework, redux toolkit, Vite, yarn, git etc....
 
 # Steps to run the project
 
