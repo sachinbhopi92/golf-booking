@@ -56,6 +56,22 @@ const GolfBookingForm: FC = () => {
       return;
     }
 
+    if (
+      !selectedCourse ||
+      !selectedTime ||
+      !isTimeSlotAvailable(
+        selectedTime,
+        bookingsFromStore,
+        selectedCourse,
+        golferIds
+      )
+    ) {
+      setAlertMessage("Invalid booking! Please follow the 5-hour rule.");
+      setAlertType("danger");
+      setShowAlert(true);
+      return;
+    }
+
     golferIds.forEach((golferId) => {
       dispatch(
         addBooking({ golferId, course: selectedCourse, time: selectedTime })
